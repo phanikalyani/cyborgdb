@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Prediction Web App</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>🔮 AI Prediction Web App</h1>
+        <p class="subtitle">Enter any text or value below and get AI predictions instantly.</p>
+
+        <div class="card">
+            <label>Enter Input:</label>
+            <input type="text" id="userInput" placeholder="Type something…">
+            <button onclick="makePrediction()">Predict</button>
+
+            <div id="resultBox" class="hidden">
+                <h3>Prediction Output</h3>
+                <p><b>Result:</b> <span id="resultText"></span></p>
+                <p><b>Confidence:</b> <span id="confidence"></span></p>
+            </div>
+        </div>
+
+        <footer>© 2025 AI Prediction System — Built with Node.js</footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

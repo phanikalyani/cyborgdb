@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cyborgdb-healthcare
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: cyborgdb-healthcare
+  template:
+    metadata:
+      labels:
+        app: cyborgdb-healthcare
+    spec:
+      containers:
+      - name: app
+        image: cyborgdb-healthcare:latest
+        ports:
+        - containerPort: 8000
+        envFrom:
+        - secretRef:
+            name: cyborgdb-secrets

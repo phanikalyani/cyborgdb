@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+requests
+python-dotenv
+pydantic
+numpy
+sentence-transformers
+cryptography
+pytest
+faker
